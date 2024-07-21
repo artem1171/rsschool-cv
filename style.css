@@ -147,10 +147,15 @@ li{
 
 .footer-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     width: 800px;
     margin: 0 auto;
+}
+
+.year {
+    margin: 0;
 }
 
 a.rss-logo {
@@ -160,4 +165,33 @@ a.rss-logo {
     background-size: contain;
     background-repeat: no-repeat;
     background-position-x: right;
+}
+
+@media  screen and (max-width: 800px) {
+    .header-container {
+        width: auto;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .navigation-link {
+        padding: 10px 7px;
+        font-size: 16px;
+        font-weight: 300;
+    }
+
+    .main-container {
+        width: auto;
+    }
+
+    .cv-section {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .footer-container {
+        width: auto;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
